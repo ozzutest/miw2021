@@ -1,0 +1,195 @@
+{
+	"filename": "..\\datasets\\australian.dat", 
+	"decision_class": [0], 
+	"delete_column": [], 
+	"input_col": [1, 2, 3, 4, 5], 
+	"row_range": ["full"], 
+	"normalize_data": true, 
+	"normalize_column": [1, 2, 3, 4, 5], 
+	"describe_column": ["full"], 
+	"sym_to_num": true, 
+	"save_to_dir": "..\\outputs", 
+	"file_extension": "txt", 
+	"delimiter": ";",
+	"column_description": {
+        "0": [
+                {
+                        "average": 0.6782608695652174,
+                        "column_index": 0,
+                        "max_value": 1.0,
+                        "min_value": 0.0,
+                        "most_common_value": [
+                                1.0,
+                                468
+                        ]
+                }
+        ],
+        "1": [
+                {
+                        "average": 31.56820289855064,
+                        "column_index": 1,
+                        "max_value": 80.25,
+                        "min_value": 13.75,
+                        "most_common_value": [
+                                31.57,
+                                12
+                        ]
+                }
+        ],
+        "2": [
+                {
+                        "average": 4.758724637681158,
+                        "column_index": 2,
+                        "max_value": 28.0,
+                        "min_value": 0.0,
+                        "most_common_value": [
+                                1.5,
+                                21
+                        ]
+                }
+        ],
+        "3": [
+                {
+                        "average": 1.7666666666666666,
+                        "column_index": 3,
+                        "max_value": 3.0,
+                        "min_value": 1.0,
+                        "most_common_value": [
+                                2.0,
+                                525
+                        ]
+                }
+        ],
+        "4": [
+                {
+                        "average": 7.372463768115942,
+                        "column_index": 4,
+                        "max_value": 14.0,
+                        "min_value": 1.0,
+                        "most_common_value": [
+                                8.0,
+                                146
+                        ]
+                }
+        ],
+        "5": [
+                {
+                        "average": 4.6927536231884055,
+                        "column_index": 5,
+                        "max_value": 9.0,
+                        "min_value": 1.0,
+                        "most_common_value": [
+                                4.0,
+                                408
+                        ]
+                }
+        ],
+        "6": [
+                {
+                        "average": 2.2234057971014476,
+                        "column_index": 6,
+                        "max_value": 28.5,
+                        "min_value": 0.0,
+                        "most_common_value": [
+                                0.0,
+                                70
+                        ]
+                }
+        ],
+        "7": [
+                {
+                        "average": 0.5231884057971015,
+                        "column_index": 7,
+                        "max_value": 1.0,
+                        "min_value": 0.0,
+                        "most_common_value": [
+                                1.0,
+                                361
+                        ]
+                }
+        ],
+        "8": [
+                {
+                        "average": 0.427536231884058,
+                        "column_index": 8,
+                        "max_value": 1.0,
+                        "min_value": 0.0,
+                        "most_common_value": [
+                                0.0,
+                                395
+                        ]
+                }
+        ],
+        "9": [
+                {
+                        "average": 2.4,
+                        "column_index": 9,
+                        "max_value": 67.0,
+                        "min_value": 0.0,
+                        "most_common_value": [
+                                0.0,
+                                395
+                        ]
+                }
+        ],
+        "10": [
+                {
+                        "average": 0.4579710144927536,
+                        "column_index": 10,
+                        "max_value": 1.0,
+                        "min_value": 0.0,
+                        "most_common_value": [
+                                0.0,
+                                374
+                        ]
+                }
+        ],
+        "11": [
+                {
+                        "average": 1.9289855072463769,
+                        "column_index": 11,
+                        "max_value": 3.0,
+                        "min_value": 1.0,
+                        "most_common_value": [
+                                2.0,
+                                625
+                        ]
+                }
+        ],
+        "12": [
+                {
+                        "average": 184.0144927536232,
+                        "column_index": 12,
+                        "max_value": 2000.0,
+                        "min_value": 0.0,
+                        "most_common_value": [
+                                0.0,
+                                132
+                        ]
+                }
+        ],
+        "13": [
+                {
+                        "average": 1018.3855072463768,
+                        "column_index": 13,
+                        "max_value": 100001.0,
+                        "min_value": 1.0,
+                        "most_common_value": [
+                                1.0,
+                                295
+                        ]
+                }
+        ],
+        "14": [
+                {
+                        "average": 0.4449275362318841,
+                        "column_index": 14,
+                        "max_value": 1.0,
+                        "min_value": 0.0,
+                        "most_common_value": [
+                                0.0,
+                                383
+                        ]
+                }
+        ]
+}}
