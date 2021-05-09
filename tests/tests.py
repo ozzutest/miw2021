@@ -6,21 +6,46 @@ from DataFrame import DataFrame
 from kNN import kNearestNeighbors
 
 
-def unpack_dataset(dataframe):
+def unpack_dataset(dataframe, n_probe):
     size = dataframe.get_shape()[0]
-    train_split = int(0.7 * size) # 70% percent of data as training sets
-    X_train = dataframe.inputs[:train_split]
-    X_test = dataframe.inputs[train_split:] # 30 % are testing sets
-    Y_train = dataframe.decision_class[:train_split]
-    Y_test = dataframe.decision_class[train_split:]
-    print(f"Training sets: X train, Y train - {len(X_train),len(Y_train)} Testing sets: Y test, X test - {len(Y_test), len(X_test)}")
-    return X_train, X_test, Y_train, Y_test
+    if not isinstance(n_probe, int): raise ValueError('The row index is not an integer.')
+    x_test = dataframe.inputs.pop(n_probe)
+    y_test = dataframe.decision_class.pop(n_probe)
+    X_train = dataframe.inputs
+    y_train = dataframe.decision_class
+    
+    return X_train, y_train, x_test, y_test
+
+def is_predicted(y_test, predicted):
+    if y_test == predicted[0]:
+        print(f'predicted: {y_test} -> {predicted[0]}')
+    else:
+        print(f'not predicted: {y_test} -> {predicted[0]}')
 
 
 # Initialize the dataframe object
-
 df = DataFrame()
 
+# Set the classificator
+knn = kNearestNeighbors(k = 5, metric='euclidean')
+
+# get the row (input column and decision class) for predicing by index
+n_probe = 32
+
+# get train set and testing sample
+X_train, y_train, x_test, y_test = unpack_dataset(df, n_probe)
+
+# printing the sample
+print(f'Testing sample: {x_test}, {y_test}')
+
+# set the input columns and decision class to the classifier
+knn.fit(X_train, y_train)
+predictions = knn.predict([x_test])
+
+# print the result
+is_predicted(y_test, predictions)
+
+# split data to inputs and decision classess
 X_set, y_set = df.inputs, df.decision_class
 
 # print decision class and input columns
