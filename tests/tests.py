@@ -8,21 +8,6 @@ from kNN import kNearestNeighbors
 # Initialize the dataframe object
 df = DataFrame()
 
-# Set the classificator
-knn = kNearestNeighbors(k = 5, metric='euclidean')
-
-# get train set and testing sample
-X_train, y_train, x_test, y_test = take_input(df)
-
-# printing the sample
-print(f'Testing sample: {x_test}, {y_test}')
-
-# set the input columns and decision class to the classifier
-knn.fit(X_train, y_train)
-predictions = knn.predict([x_test])
-# print the result
-is_predicted(y_test, predictions)
-
 # split data to inputs and decision classess
 X_set, y_set = df.inputs, df.decision_class
 
